@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Làm bài — Ôn tập Toán</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="config.js"></script>
+<script src="assets/mathjax-config.js"></script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+
+<!-- 1. Đăng nhập + nội quy -->
+<section class="screen" id="s-login">
+  <div class="panel">
+    <p class="sub"><a href="./">Về danh sách đề</a></p>
+    <h1 id="exTitle">Đang tải đề…</h1>
+    <p class="sub" id="exSub"></p>
+    <dl class="facts" id="exFacts"></dl>
+    <div id="loginMsg"></div>
+    <form id="loginForm" autocomplete="off">
+      <div id="fRoster">
+        <label class="field"><span>Mã học sinh</span><input id="maHS" required maxlength="40" placeholder="Ví dụ: 12A1-05"></label>
+        <label class="field" id="fPass"><span>Mật khẩu</span><input id="matKhau" type="password" maxlength="40"></label>
+      </div>
+      <div id="fFree" class="hidden">
+        <label class="field"><span>Họ và tên</span><input id="hoTen" maxlength="60" placeholder="Nguyễn Văn An"></label>
+        <label class="field"><span>Lớp</span><input id="lop" maxlength="20" placeholder="12A1"></label>
+      </div>
+      <div id="rulesBox">
+        <p><b>Quy định khi làm bài</b></p>
+        <ul class="rules" id="rules"></ul>
+      </div>
+      <div class="actions">
+        <button class="btn" id="btnStart" type="submit">Bắt đầu làm bài</button>
+        <button class="btn ghost" id="btnReview" type="button">Xem lại bài đã nộp</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- 2. Làm bài -->
+<section class="screen hidden" id="s-exam">
+  <div class="bar">
+    <div class="who" id="who"></div>
+    <span class="vio" id="vio" title="Số lần vi phạm">Vi phạm: 0</span>
+    <span class="clock" id="clock">--:--</span>
+  </div>
+  <div class="exam" id="examGrid">
+    <div class="paper no-select" id="paper"></div>
+    <aside class="sheet no-select" id="sheet">
+      <h3 id="sheetToggle">Phiếu trả lời</h3>
+      <div id="bubbles"></div>
+      <p class="stat" id="stat"></p>
+      <button class="btn red" id="btnSubmit">Nộp bài</button>
+    </aside>
+  </div>
+  <div class="watermark" id="wm"></div>
+</section>
+
+<!-- 3. Kết quả -->
+<section class="screen hidden" id="s-result">
+  <div class="panel" id="resultPanel"></div>
+  <div class="review" id="review"></div>
+</section>
+
+<div class="shield hidden" id="shield" role="alertdialog" aria-modal="true">
+  <div class="box">
+    <h2 id="shieldT"></h2>
+    <p id="shieldM"></p>
+    <button class="btn" id="shieldBtn">Quay lại làm bài</button>
+  </div>
+</div>
+<div class="modal hidden" id="modal" role="dialog" aria-modal="true">
+  <div class="panel">
+    <h1 id="modalT"></h1>
+    <p id="modalM"></p>
+    <div class="actions" id="modalA"></div>
+  </div>
+</div>
+
+<script src="assets/common.js"></script>
+<script src="assets/exam.js"></script>
+</body>
+</html>

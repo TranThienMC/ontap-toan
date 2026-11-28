@@ -1,0 +1,550 @@
+{
+ "ten_trang": "Ôn tập Toán THPT",
+ "tac_gia": "Thầy Thiện Toán",
+ "bo_de": {
+  "cki-toan12": {
+   "ten": "Ôn tập kiểm tra cuối học kì I – Toán 12",
+   "mo_ta": "Các đề ôn tập kiểm tra cuối học kì I năm học 2026 – 2027. Từ đề số 12 trở đi bám sát cấu trúc, ma trận đề kiểm tra cuối học kì I của Sở GD&ĐT Hải Phòng.",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "tep_chua": []
+  },
+  "vao10-toan": {
+   "ten": "Ôn thi tuyển sinh vào lớp 10 – Toán",
+   "mo_ta": "Đề luyện thi vào lớp 10 THPT theo cấu trúc đề trắc nghiệm của Sở GD&ĐT Hải Phòng (12 câu nhiều lựa chọn, 4 câu đúng sai, 6 câu trả lời ngắn; 90 phút).",
+   "khoi": "Khối 9",
+   "loai": "Ôn thi vào 10",
+   "tep_chua": []
+  }
+ },
+ "exams": [
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-1",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 01 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_1.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 1,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-2",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 02 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_2.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 2,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-3",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 03 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_3.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 3,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-4",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 04 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_4.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 4,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-5",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 05 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_5.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 5,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-6",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 06 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_6.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 6,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-7",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 07 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_7.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 7,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-8",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 08 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_8.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 8,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-9",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 09 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_9.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 9,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-10",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 10 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_10.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 10,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-de-so-11",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 11 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/De_so_11.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 11,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-hp-cki-01",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 12 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/HP_CKI_01.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 12,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-hp-cki-02",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 13 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/HP_CKI_02.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 13,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-hp-cki-03",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 14 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/HP_CKI_03.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 14,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-kiem-tra-dinh-ky-hp-cki-04",
+   "khoi": "Khối 12",
+   "loai": "Kiểm tra định kỳ",
+   "title": "ÔN TẬP KIỂM TRA ĐỊNH KỲ - ĐỀ SỐ 15 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kiểm tra định kỳ/HP_CKI_04.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 15,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-ngosilien-bacninh-t11",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 16 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/NgoSiLien_BacNinh_T11.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 16,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-nguyenkhuyen-t11-01",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 17 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/NguyenKhuyen_T11_01.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 17,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-nguyenkhuyen-t11-02",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 18 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/NguyenKhuyen_T11_02.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 18,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt01",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 01 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT01.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 1,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt02",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 02 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT02.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 2,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt03",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 03 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT03.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 3,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt04",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 04 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT04.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 4,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt05",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 05 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT05.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 5,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt06",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 06 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT06.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 6,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt07",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 07 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT07.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 7,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt08",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 08 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT08.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 8,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt09",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 09 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT09.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 9,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt10",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 10 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT10.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 10,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt11",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 11 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT11.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 11,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt12",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 12 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT12.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 12,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt13",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 13 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT13.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 13,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt14",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 14 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT14.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 14,
+   "minutes": 90
+  },
+  {
+   "id": "khoi-12-ky-thi-tnthpt-tdmt15",
+   "khoi": "Khối 12",
+   "loai": "Kỳ thi TNTHPT",
+   "title": "HƯỚNG ĐẾN KỲ THI TỐT NGHIỆP THPT NĂM 2027 - ĐỀ SỐ 15 - THẦY THIỆN TOÁN",
+   "sub": "",
+   "file": "Khối 12/Kỳ thi TNTHPT/TDMT15.tex",
+   "counts": {
+    "MC": 12,
+    "TF": 4,
+    "SA": 6
+   },
+   "mode": "thi",
+   "so": 15,
+   "minutes": 90
+  }
+ ]
+}

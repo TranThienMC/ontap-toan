@@ -1,0 +1,1 @@
+window.SITE = {"api": "https://script.google.com/macros/s/AKfycbxqAaDUVMiz0PsxDigQKHlQFwm9zA8MUaZjsbol28InEZ1XDLBoWZzLzSnhfGGM51Ih/exec", "ten_trang": "Ôn tập Toán THPT", "tac_gia": "Thầy Thiện Toán"};

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ôn tập Toán</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="config.js"></script>
+</head>
+<body>
+<header class="wrap top">
+  <div class="margin-line">
+    <h1 class="brand"><a href="./" id="siteName">Ôn tập Toán</a></h1>
+    <p class="by" id="siteBy"></p>
+  </div>
+  <div class="tabs" role="tablist" id="tabs"></div>
+</header>
+<main class="wrap">
+  <div id="boHead" class="group hidden">
+    <h2 id="boTen"></h2>
+    <p class="note" id="boMoTa"></p>
+    <p class="note"><a href="./">Xem tất cả đề</a></p>
+  </div>
+  <div class="toolbar" id="toolbar">
+    <input class="search" id="q" type="search" placeholder="Tìm đề theo tên, ví dụ: đề số 3" aria-label="Tìm đề">
+  </div>
+  <div id="list"></div>
+</main>
+<footer class="wrap">Đề mới được thêm tự động khi thầy cô đưa file lên. Nếu bài thi đang đóng, hãy chờ đến giờ mở.</footer>
+<script src="assets/common.js"></script>
+<script>
+const GROUP_NOTE = {
+  "Chuyên đề": "Đề theo từng chủ đề, cấu trúc như bài kiểm tra định kỳ, có giới hạn thời gian và giám sát.",
+  "Kiểm tra định kỳ": "Bài kiểm tra có giới hạn thời gian và giám sát khi làm bài.",
+  "Kỳ thi TNTHPT": "Đề luyện thi tốt nghiệp theo cấu trúc mới.",
+  "Ôn thi vào 10": "Đề luyện thi tuyển sinh vào lớp 10 theo cấu trúc của Sở GD&ĐT Hải Phòng.",
+};
+let DATA = { exams: [] }, STATUS = {}, KHOI = null, BO = null;
+
+function fmtCounts(c) {
+  const n = c.MC + c.TF + c.SA;
+  return n + " câu";
+}
+function statusPill(e) {
+  const st = STATUS[e.id];
+  const mode = (st && st.CheDo) || e.mode;
+  if (st && !st.open) return `<span class="pill dong">${esc(st.reason || "Đang đóng")}</span>`;
+  if (mode === "luyentap") return `<span class="pill lt">Luyện tập</span>`;
+  return `<span class="pill mo">Đang mở</span>`;
+}
+function inBo(e) {
+  const tep = BO.tep_chua || [];
+  return e.khoi === BO.khoi && (!BO.loai || e.loai === BO.loai) &&
+    (!tep.length || tep.some(t => e.file.toLowerCase().includes(String(t).toLowerCase())));
+}
+function render() {
+  const q = $("#q").value.trim().toLowerCase();
+  const exams = BO ? DATA.exams.filter(inBo)
+    : DATA.exams.filter(e => e.khoi === KHOI && (!q || (e.title + " " + e.sub + " " + e.file).toLowerCase().includes(q)));
+  const groups = {};
+  exams.forEach(e => (groups[e.loai] = groups[e.loai] || []).push(e));
+  const order = Object.keys(groups).sort();
+  order.forEach(g => groups[g].sort((a, b) => (a.so || 1e9) - (b.so || 1e9)));
+  if (!order.length) {
+    $("#list").innerHTML = `<div class="group"><div class="empty">${q ? "Không có đề nào khớp với từ khóa." : "Khối này chưa có đề. Đề sẽ xuất hiện ở đây khi thầy cô đưa lên."}</div></div>`;
+    return;
+  }
+  $("#list").innerHTML = order.map(g => `
+    <section class="group">
+      <h2>${esc(g)}</h2>
+      ${GROUP_NOTE[g] ? `<p class="note">${GROUP_NOTE[g]}</p>` : ""}
+      <div class="list">
+        ${groups[g].map(e => {
+          const st = STATUS[e.id] || {};
+          const min = st.ThoiGian !== undefined ? +st.ThoiGian : e.minutes;
+          return `<a class="row" href="exam.html?id=${encodeURIComponent(e.id)}">
+            <div><div class="t">${esc(e.title)}</div>${e.sub ? `<div class="s">${esc(e.sub)}</div>` : ""}</div>
+            <div class="meta">${fmtCounts(e.counts)}${min ? ", " + min + " phút" : ", không giới hạn giờ"}</div>
+            ${statusPill(e)}
+          </a>`; }).join("")}
+      </div>
+    </section>`).join("");
+}
+function renderTabs() {
+  const khois = [...new Set(DATA.exams.map(e => e.khoi))];
+  ["Khối 9", "Khối 10", "Khối 11", "Khối 12"].forEach(k => { if (!khois.includes(k)) khois.push(k); });
+  khois.sort((a, b) => a.localeCompare(b, "vi", { numeric: true }));
+  const saved = localStorage.getItem("khoi");
+  KHOI = khois.includes(saved) ? saved : (khois.find(k => DATA.exams.some(e => e.khoi === k)) || khois[0]);
+  $("#tabs").innerHTML = khois.map(k => `<button class="tab" role="tab" aria-selected="${k === KHOI}" data-k="${esc(k)}">${esc(k)}</button>`).join("");
+  $all(".tab").forEach(b => b.onclick = () => {
+    KHOI = b.dataset.k; localStorage.setItem("khoi", KHOI);
+    $all(".tab").forEach(x => x.setAttribute("aria-selected", x === b)); render();
+  });
+}
+(async () => {
+  if (SITE.ten_trang) { $("#siteName").textContent = SITE.ten_trang; document.title = SITE.ten_trang; }
+  if (SITE.tac_gia) $("#siteBy").textContent = SITE.tac_gia;
+  DATA = await (await fetch("data/index.json", { cache: "no-cache" })).json();
+  const boKey = new URLSearchParams(location.search).get("bo");
+  BO = boKey && DATA.bo_de ? DATA.bo_de[boKey] : null;
+  if (BO) {
+    $("#tabs").classList.add("hidden"); $("#toolbar").classList.add("hidden");
+    $("#boHead").classList.remove("hidden");
+    $("#boTen").textContent = BO.ten || "Bộ đề ôn tập";
+    $("#boMoTa").textContent = BO.mo_ta || "";
+    document.title = (BO.ten || "Bộ đề") + " — " + (SITE.ten_trang || "Ôn tập Toán");
+  } else {
+    renderTabs();
+  }
+  render();
+  $("#q").addEventListener("input", render);
+  try { const r = await api("list"); STATUS = r.exams || {}; render(); } catch (e) { /* vẫn hiển thị danh sách */ }
+})();
+</script>
+</body>
+</html>
